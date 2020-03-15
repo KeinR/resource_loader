@@ -2,6 +2,11 @@
 #include <iostream>
 #include <string>
 
+/**
+ * Orion "KeinR" Musselman
+ * Version 1.0
+ */
+
 int main(int argc, char *argv[]) {
 
     std::ofstream headerOut;
