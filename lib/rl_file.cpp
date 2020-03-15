@@ -1,5 +1,10 @@
 #include <rl_file.h>
 
+/**
+ * Orion "KeinR" Musselman
+ * Version 1.1
+ */
+
 rl_file::rl_file(int sizeVal, const char *dataVal): sizeVal(sizeVal), dataVal(dataVal) {
 }
 
