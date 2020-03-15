@@ -4,7 +4,7 @@
 
 /**
  * Orion "KeinR" Musselman
- * Version 1.1
+ * Version 1.2
  */
 
 int main(int argc, char *argv[]) {
@@ -33,9 +33,7 @@ int main(int argc, char *argv[]) {
                     name[f] = '_';
                 }
             }
-            if (name[0] >= '0' && name[0] <= '9') {
-                name.insert(name.begin(), '_');
-            }
+            name.insert(0, "f_");
 
             headerOut << "extern rl_file " << name << ";\n";
             implOut << "rl_file " << name << "=rl_file(";
