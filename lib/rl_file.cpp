@@ -19,10 +19,10 @@ void rl_file::free() {
     }
 }
 
-int rl_file::size() {
+int rl_file::size() const {
     return sizeVal;
 }
 
-const char *rl_file::data() {
+const char *rl_file::data() const {
     return dataVal;
 }

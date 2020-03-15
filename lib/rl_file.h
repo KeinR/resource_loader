@@ -3,7 +3,7 @@
 
 /**
  * Orion "KeinR" Musselman
- * Version 1.0
+ * Version 1.1
  */
 
 class rl_file {
@@ -13,8 +13,8 @@ class rl_file {
     rl_file(int sizeVal, const char *dataVal);
     ~rl_file();
     void free();
-    int size();
-    const char *data();
+    int size() const;
+    const char *data() const;
 };
 
 #endif
