@@ -4,7 +4,7 @@
 
 /**
  * Orion "KeinR" Musselman
- * Version 1.0
+ * Version 1.1
  */
 
 int main(int argc, char *argv[]) {
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
             std::string name(argv[i]);
             for (int f = name.length()-1; f >= 0; f--) {
                 if (name[f] == '/' || name[f] == '\\') {
-                    name.erase(name.begin()+1, name.begin()+i+1);
+                    name.erase(name.begin(), name.begin()+f+1);
                     break;
                 } else if (name[f] < '0' || (name[f] > '9' && name[f] < 'A') || (name[f] > 'Z' && name[f] < 'a') || name[f] > 'z') {
                     name[f] = '_';
